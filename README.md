@@ -4,8 +4,10 @@ From the ABA and NBA merger to the new In-Season Tournament, the NBA has been th
 
 In this study, NBA game and season data from the 1999–2000 to 2022–2023 regular seasons is analyzed to observe 3-point shooting trends in the NBA and provide a scoring analysis that looks into the shooting habits of players today.
 
+<br>
 
-Questions to keep in mind:
+**Questions to keep in mind:**
 
 When and how did the NBA 3-Point boom arrive within the past 20 years?
+
 What are some common shooting habits that players today have opposed to their veteran counterparts from the early 2000s?
