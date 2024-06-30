@@ -6,8 +6,8 @@ In this study, NBA game and season data from the 1999–2000 to 2022–2023 regu
 
 <br>
 
-**Questions to keep in mind:**
+*Questions to keep in mind:*
 
-When and how did the NBA 3-Point boom arrive within the past 20 years?
+1. When and how did the NBA 3-Point boom arrive within the past 20 years?
 
-What are some common shooting habits that players today have opposed to their veteran counterparts from the early 2000s?
+2. What are some common shooting habits that players today have opposed to their veteran counterparts from the early 2000s?
