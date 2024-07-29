@@ -1,13 +1,10 @@
-# NBA 3-Point Shooting Evolution and Analysis
+# Analysis of 3-Point Shooting Trends in the NBA
 
-From the ABA and NBA merger to the new In-Season Tournament, the NBA has been through many different eras, and each came with revolutionary changes to the game. One of the most important eras is today's 3-Point Revolution, whose inception can be traced to the implementation of the radical 3-Point line in 1976. Anyone who has followed the NBA closely over the past decade can see with their eyes the boom of the 3-point shot and how the product on the court is impacted greatly by it when in the decades before that was not the case.
-
-In this study, NBA game and season data from the 1999–2000 to 2022–2023 regular seasons is analyzed to observe 3-point shooting trends in the NBA and provide a scoring analysis that looks into the shooting habits of players today.
+The NBA has experienced numerous transformative eras since the ABA-NBA merger, each bringing revolutionary changes to the game. One of the most significant eras is the current 3-Point Revolution, which began in the mid-2010s. Over the past decade, the prominence of the 3-point shot has dramatically reshaped the game, a stark contrast to earlier decades. This study analyzes NBA game and season data from 1999–2000 to 2022–2023 regular seasons to observe 3-point shooting trends and provide a comprehensive scoring analysis focused on contemporary player shooting behaviors.
 
 <br>
 
-*Questions to keep in mind:*
+Key Questions:
 
-1. When and how did the NBA 3-Point boom arrive within the past 20 years?
-
-2. What are some common shooting habits that players today have opposed to their veteran counterparts from the early 2000s?
+1. When and how did the NBA 3-Point boom emerge in the past 20 years?
+2. What are some common shooting habits of today's players compared to their veteran counterparts from the early 2000s?
