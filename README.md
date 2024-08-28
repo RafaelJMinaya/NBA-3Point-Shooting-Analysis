@@ -10,8 +10,8 @@ Key Questions:
 1. When and how did the NBA 3-Point boom emerge in the past 20 years?
 2. What are some common shooting habits of today's players compared to their veteran counterparts from the early 2000s?
 
-
-
+<br>
+<br>
 
 ## 1. Data Overview
 For this exploration of 3-point shooting, we'll be implementing the use of different NBA shooting datasets found on Kaggle. All DataFrames have been cleaned to have no missing or null values (please look into the code to see different processes applied to clean data).
@@ -110,8 +110,6 @@ However, the mid-range shot (long 2-pointer) isn't necessarily dead as stars lik
 
 The difference in shot selection for players is made even more evident by just looking at the shot selection of the most dominant Centers from their respective eras, Shaquille O'Neal and Nikola Jokić.
 
-![download](https://github.com/user-attachments/assets/51e904de-3867-4611-a8a4-c94c0b0086e8)
-
 ![__results___30_0](https://github.com/user-attachments/assets/a8277d28-83b7-4db0-86e0-ecfbb6b79b95)
 
 <br>
@@ -131,13 +129,19 @@ Let's start the process of building and comparing different classification model
 
 In the table below (after some cleaning) we'll see an example of the Features and Labels we'll be using to train and test our models.
 
+![image](https://github.com/user-attachments/assets/dcff0b6d-1624-4e13-bb43-ddb82952d992)
+
 ![__results___35_0](https://github.com/user-attachments/assets/ce9c3481-f679-4e1a-a853-1c74808907ba)
+
+![image](https://github.com/user-attachments/assets/4f49c7b7-6ceb-4d37-9eaa-e6da100939af)
 
 ![__results___37_0](https://github.com/user-attachments/assets/62c751ae-8ab0-4895-9606-81684cae3166)
 
 Gradient Boosted Trees is the model we'll use as it boasts the highest Accuracy (66%) and Precision (71%) score (even if minimal) of all the classification models tested even before we tune up our parameters for our specific Gradient Boosting model. It's important as well to point out feature importance with how Gradient Boosting and Random Forest both hold shot coordinate features 'LOC_X' and 'LOC_Y' at a much higher relevance than Logistic Regression which holds 'SHOT_DISTANCE' as the most important features in its prediction model.
 
 Now if we want to get the most out of our Gradient Boosted model we can compare the learning rates for our models while our n_estimators parameter is set to 100 throughout all versions. Comparing them below we see the model peaks at a learning rate of 0.03 which boasts the highest Accuracy (68%) and Precision (76%) score.
+
+![image](https://github.com/user-attachments/assets/ba42c300-576b-4896-bea7-0dfaf5d3bd22)
 
 <br>
 
@@ -185,6 +189,9 @@ The NBA today finds itself in the middle of one of its most defining eras with t
 Starting around the 2013-14 and 2014-2015 seasons behind the scenes the NBA was also going through another revolution in the form of the analytics boom. Teams like the Houston Rockets with offensive-minded Head Coach Mike D'Antoni and star player James Harden were the faces of this new offensive-minded movement. If one individual and their team could be labeled as leading the way behind the scenes it was Houston Rockets General Manager Daryl Morey. With his analytics-focused basketball philosophy, labeled “Moreyball,” Morey pushed for his team to concentrate on more “statistical sound” shot attempts which focused less on mid-range shots and more on 3s and shots closer to the basket.
 
 Morey's philosophy sent shockwaves through the NBA and other teams followed suit. Using data similar to how Morey did, in this study, we showcased how vital it is for coaches, trainers, and higher-up executives within teams to find and follow important trends. Such findings can then be acted upon to make well-informed decisions to prepare for the future of not just the NBA but of all of basketball.
+
+<br>
+<br>
 
 # 6. Acknowledgments
 
