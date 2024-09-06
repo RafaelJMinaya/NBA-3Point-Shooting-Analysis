@@ -117,35 +117,70 @@ The difference in shot selection for players is made even more evident by just l
 
 ## 4. Building A Scouting Report (Past vs Present)
 
-Now we'll take a more granular look at how shooting habits have changed over time (after comparing and picking a machine learning model) to build a visual scouting report to compare LeBron James’s strongest shooting locations/habits and how they've evolved over the years.
-
-Why pick Lebron James for this evaluation? Well, he provides us with a very unique look into a player that still plays at the relatively same pace and efficiency today as he did in the early 2000s when he started his NBA career. Still averaging 25+ points per game in his 21st season he's found ways to evolve his playstyle with the times making him a perfect candidate for our comparison.
+Let us take a more granular look at how shooting habits have changed over time by comparing two seasons of Lebron James' career and utilizing machine learning models. Why pick Lebron James for this evaluation? He provides us with a very unique look into a player that still plays at the relatively same pace and efficiency today as he did in the early 2000s when he started his NBA career. Still averaging 25+ points per game in his 21st season he's found ways to evolve his playstyle with the times making him a perfect candidate for our comparison.
 
 <br>
 
-4.1 **Comparing Classification Models**
+4.1 **Data Preprocessing**
 
-Let's start the process of building and comparing different classification models with default parameters that can show us how LeBron's hotspots and efficiency have changed from certain locations on the court; specifically, what are his favorite and most efficient shooting locations today vs his rookie year.
+![image](https://github.com/user-attachments/assets/58ecccf7-d069-4b0a-883e-14dd39a10310)
 
-In the table below (after some cleaning) we'll see an example of the Features and Labels we'll be using to train and test our models.
-
-![image](https://github.com/user-attachments/assets/dcff0b6d-1624-4e13-bb43-ddb82952d992)
-
-![__results___35_0](https://github.com/user-attachments/assets/ce9c3481-f679-4e1a-a853-1c74808907ba)
-
-![image](https://github.com/user-attachments/assets/4f49c7b7-6ceb-4d37-9eaa-e6da100939af)
-
-![__results___37_0](https://github.com/user-attachments/assets/62c751ae-8ab0-4895-9606-81684cae3166)
-
-Gradient Boosted Trees is the model we'll use as it boasts the highest Accuracy (66%) and Precision (71%) score (even if minimal) of all the classification models tested even before we tune up our parameters for our specific Gradient Boosting model. It's important as well to point out feature importance with how Gradient Boosting and Random Forest both hold shot coordinate features 'LOC_X' and 'LOC_Y' at a much higher relevance than Logistic Regression which holds 'SHOT_DISTANCE' as the most important features in its prediction model.
-
-Now if we want to get the most out of our Gradient Boosted model we can compare the learning rates for our models while our n_estimators parameter is set to 100 throughout all versions. Comparing them below we see the model peaks at a learning rate of 0.03 which boasts the highest Accuracy (68%) and Precision (76%) score.
-
-![image](https://github.com/user-attachments/assets/ba42c300-576b-4896-bea7-0dfaf5d3bd22)
+![image](https://github.com/user-attachments/assets/98724857-e146-41f1-a5d5-cfaaca2428c0)
 
 <br>
 
-4.2 **Lebron 2004**
+4.2 **Model Selection and Hyperparameter Tuning**
+
+Let's start the process of building and comparing different classification models with default parameters and then applying more complex tools to make our models more accurate.
+
+Important note that both datasets for each season will be tested on models separately to ensure that the appropriate model is being chosen correctly for each dataset.
+
+<br>
+
+***2003-2004 Season Dataset: Model Analysis***
+
+Model Comparison Metrics
+
+![image](https://github.com/user-attachments/assets/68a9262b-e8d9-4d0e-a055-88d21ca42b9f)
+
+Confusion Matrices
+
+![image](https://github.com/user-attachments/assets/9db84aa3-f00a-43f0-984b-20ab01d3d105)
+
+Applying k-Fold Cross Validation
+
+![image](https://github.com/user-attachments/assets/e16b1d10-eb3f-4c45-8c23-ff9b04afece0)
+
+Hyperparameter Tuning for our Best Performing Model
+
+![image](https://github.com/user-attachments/assets/07540792-c5ea-42be-b249-e3497beeb118)
+
+<br>
+
+***2022-2023 Season Dataset: Model Analysis***
+
+Model Comparison Metrics
+
+![image](https://github.com/user-attachments/assets/e581562b-efbc-4688-8364-516e061644e6)
+
+Confusion Matrices
+
+![image](https://github.com/user-attachments/assets/0c586875-9c81-4896-9e73-30a5ba428864)
+
+Applying k-Fold Cross Validation
+
+![image](https://github.com/user-attachments/assets/ddc49e17-5b06-4437-8486-6a25a6c52b49)
+
+Hyperparameter Tuning for our Best Performing Model
+
+![image](https://github.com/user-attachments/assets/8f7aebaa-4adf-40ab-8a57-fcf926b4c5fd)
+
+
+Gradient Boosted Trees is the model we'll use for both data sets as it boasts the highest Accuracy and Precision score after tuning all the classification models tested. It's important as well to point out feature importance with how Gradient Boosting and Random Forest both hold shot coordinate features 'LOC_X' and 'LOC_Y' at a much higher relevance than Logistic Regression which holds 'SHOT_DISTANCE' as the most important features in its prediction model.
+
+<br>
+
+4.3 **Lebron 2004**
 
 Starting with raw shot charts we see shots closer to the rim (specifically less than 8 ft) drown out any other shot distance LeBron is making in terms of volume.
 
@@ -153,7 +188,7 @@ Starting with raw shot charts we see shots closer to the rim (specifically less 
 
 ![__results___42_2](https://github.com/user-attachments/assets/a197e63f-d0e2-47fa-856b-989cb9432b26)
 
-Now using our Gradient Boosted model let's looks at a kdeplot for location mapping to get a better picture of how Lebron's shooting habits and hotpots.
+Now using our Gradient Boosted model let's look at a kdeplot for location mapping to get a better picture of how Lebron's shooting habits and hotpots.
 
 ![__results___44_0](https://github.com/user-attachments/assets/97c762dc-a724-4953-a556-2b817bb5032d)
 
@@ -163,7 +198,7 @@ Coaches during and after the 2003-04 season would evaluate LeBron's shot diet as
 
 <br>
 
-4.3 **Lebron 2023**
+4.4 **Lebron 2023**
 
 Now the same for the 2022-23 season
 
@@ -182,7 +217,7 @@ LeBron's evolution is very interesting to see as he still attacks the basket in 
 <br>
 <br>
 
-# 5. Conclusion
+## 5. Conclusion
 
 The NBA today finds itself in the middle of one of its most defining eras with the 3-point boom. With players like Stephen Curry being the poster child for this new era, the staggering effects of such a paradigm shift in the league but also in basketball as a whole have had indescribable impacts on how basketball at all levels is played, coached, and even examined. With the upward trend of NBA players attempting and making more 3-point shots from the beginning of the 21st century to the present being clear, the offensive capabilities of NBA teams (made evident with higher than-ever final point totals and player points per game) have reached levels never before seen. A change like this however doesn't come with the impact of just one player like Stephen Curry but with there being external factors or influences on and off the court which radically changed systems within the league.
 
@@ -193,7 +228,7 @@ Morey's philosophy sent shockwaves through the NBA and other teams followed suit
 <br>
 <br>
 
-# 6. Acknowledgments
+## 6. Acknowledgments
 
 JP Hwang for his substack and medium articles which inspired my use of heatmaps as a visualization tool.
 
