@@ -79,7 +79,7 @@ From our graph, we see playoffs-making teams continually attempted more 3s than 
 <br>
 <br>
 
-## 3. Shoot Mapping
+## 3. Shot Mapping
 3.1 **Shot Frequency**
 
 To get a better understanding of what was happening on the court we can examine shot location data which gives us the ability to map onto a plane all shots attempted during an entire season.
