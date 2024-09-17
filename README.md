@@ -14,7 +14,7 @@ Key Questions:
 <br>
 
 ## 1. Data Overview
-For this exploration of 3-point shooting, we'll be implementing the use of different NBA shooting datasets found on Kaggle. All DataFrames have been cleaned to have no missing or null values (please look into the code to see different processes applied to clean data).
+For this exploration of 3-point shooting, we'll implement different NBA shooting datasets found on Kaggle. All DataFrames have been cleaned to have no missing or null values (please look into the code to see different processes applied to clean data).
 
 **Team Statistics Dataset**:
 >Mostly comprised of Field Goals made and attempt rates by teams throughout many seasons.
@@ -23,7 +23,7 @@ For this exploration of 3-point shooting, we'll be implementing the use of diffe
 >Focuses on providing player shooting rates from different distances on the court.
 
 **Yearly Positional Shooting Datasets**:
->These collection of datasets provide positional data of every shot attempted by every player in the NBA within the specified season.
+>This collection of datasets provides positional data of every shot attempted by every player in the NBA within the specified season.
 
 <br>
 <br>
@@ -40,7 +40,7 @@ To some, this might not be an astronomical jump in shooting rates but it's stagg
 
 2.2 **Are Players Making These 3s?**
 
-Focusing on Field Goal (FG) percentage did this three-point boom have an effect of how well players were shooting the 3 ball?
+Focusing on Field Goal (FG) percentage did this three-point boom affect how well players were shooting the 3 ball?
 
 ![__results___12_0](https://github.com/user-attachments/assets/788674c9-f159-4188-a080-d53dfa58910f)
 
@@ -139,44 +139,52 @@ Important note that both datasets for each season will be tested on models separ
 
 ***2003-2004 Season Dataset: Model Analysis***
 
-Model Comparison Metrics
+Training and Performance Metrics w/ Default Parameters
 
-![image](https://github.com/user-attachments/assets/68a9262b-e8d9-4d0e-a055-88d21ca42b9f)
+![image](https://github.com/user-attachments/assets/452ad8a5-727a-46c5-b6e8-960b717240be)
 
-Confusion Matrices
+Feature Importance w/ Default Parameters
 
-![image](https://github.com/user-attachments/assets/9db84aa3-f00a-43f0-984b-20ab01d3d105)
+![image](https://github.com/user-attachments/assets/19c4dcfe-43b9-45b6-b0d3-ed1b9788f2be)
+
+Confusion Matrices w/ Default Parameters
+
+![image](https://github.com/user-attachments/assets/e249b97b-1ef4-416c-8eeb-5bd9bc403531)
 
 Applying k-Fold Cross Validation
 
-![image](https://github.com/user-attachments/assets/e16b1d10-eb3f-4c45-8c23-ff9b04afece0)
+![image](https://github.com/user-attachments/assets/ed043841-ed1a-44d5-921e-082ad2121bd2)
 
-Hyperparameter Tuning for our Best Performing Model
+Hyperparameter Tuning our Best Performing Model (Gradient Boosting)
 
-![image](https://github.com/user-attachments/assets/07540792-c5ea-42be-b249-e3497beeb118)
+![image](https://github.com/user-attachments/assets/c575ceb6-5ab0-4e7d-9107-caaa87137cdb)
 
 <br>
 
 ***2022-2023 Season Dataset: Model Analysis***
 
-Model Comparison Metrics
+Training and Performance Metrics w/ Default Parameters
 
-![image](https://github.com/user-attachments/assets/e581562b-efbc-4688-8364-516e061644e6)
+![image](https://github.com/user-attachments/assets/f3b2b83d-7c86-4e18-b66d-c3b171c4c61c)
 
-Confusion Matrices
+Feature Importance w/ Default Parameters
 
-![image](https://github.com/user-attachments/assets/0c586875-9c81-4896-9e73-30a5ba428864)
+![image](https://github.com/user-attachments/assets/46195c90-fe9f-40ed-95b1-c837d8487c99)
+
+Confusion Matrices w/ Default Parameters
+
+![image](https://github.com/user-attachments/assets/1b8c40f3-7b7e-44b2-8c8b-f5a8b6879168)
 
 Applying k-Fold Cross Validation
 
-![image](https://github.com/user-attachments/assets/ddc49e17-5b06-4437-8486-6a25a6c52b49)
+![image](https://github.com/user-attachments/assets/208a2f8d-baf0-45ad-867a-055316c9a216)
 
-Hyperparameter Tuning for our Best Performing Model
+Hyperparameter Tuning our Best Performing Model (Gradient Boosting)
 
-![image](https://github.com/user-attachments/assets/8f7aebaa-4adf-40ab-8a57-fcf926b4c5fd)
+![image](https://github.com/user-attachments/assets/52e59739-3cbf-4e91-995e-8587d6a6f21e)
 
 
-Gradient Boosted Trees is the model we'll use for both data sets as it boasts the highest Accuracy and Precision score after tuning all the classification models tested. It's important as well to point out feature importance with how Gradient Boosting and Random Forest both hold shot coordinate features 'LOC_X' and 'LOC_Y' at a much higher relevance than Logistic Regression which holds 'SHOT_DISTANCE' as the most important features in its prediction model.
+Gradient Boosted Trees is the model we'll use for both data sets as it boasts the highest Accuracy and Precision score after tuning all the classification models tested. It's important as well to point out feature importance with how Gradient Boosting and Random Forest both hold shot coordinate features 'LOC_X' and 'LOC_Y' at a much higher relevance than Logistic Regression which holds 'SHOT_DISTANCE' as the most important feature in its prediction model.
 
 <br>
 
