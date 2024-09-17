@@ -1,4 +1,4 @@
-# NBA 3-Point Shooting Trends Analysis 🏀
+# NBA 3-Point Shooting Analysis 🏀
 
 ## 0. Overview
 The NBA has experienced numerous transformative eras since the ABA-NBA merger, each bringing revolutionary changes to the game. One of the most significant eras is the current 3-Point Revolution, which began in the mid-2010s. Over the past decade, the prominence of the 3-point shot has dramatically reshaped the game, a stark contrast to earlier decades. This study analyzes NBA game and season data from 1999–2000 to 2022–2023 regular seasons to observe 3-point shooting trends and provide a comprehensive scoring analysis focused on contemporary player shooting behaviors.
@@ -17,7 +17,7 @@ Key Questions:
 For this exploration of 3-point shooting, we'll implement different NBA shooting datasets found on Kaggle. All DataFrames have been cleaned to have no missing or null values (please look into the code to see different processes applied to clean data).
 
 **Team Statistics Dataset**:
->Mostly comprised of Field Goals made and attempt rates by teams throughout many seasons.
+>Mostly comprised of Field Goals made and attempted rates by teams throughout many seasons.
 
 **Individual Player Shooting Dataset**:
 >Focuses on providing player shooting rates from different distances on the court.
@@ -247,7 +247,7 @@ Bradley Fay and Savvas Tjortjoglou for providing a template for drawing NBA Cour
 >https://github.com/bradleyfay
 >https://savvastjortjoglou.com/nba-shot-sharts.html
 
-Thank you to Dominic Samangy for starting my interest in NBA data visualization with his incredible visuals on Twitter focusing on individual players and teams.
+Thank you to Dominic Samangy for starting my interest in NBA data visualization with his visuals on Twitter focusing on individual players and teams.
 
 >https://github.com/DomSamangy
 
