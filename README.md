@@ -29,7 +29,7 @@ For this exploration of 3-point shooting, we'll implement different NBA shooting
 <br>
 
 ## 2. Shooting Breakdowns
-2.1  **3-Pointers vs 2-Pointers**
+### 2.1  *3-Pointers vs 2-Pointers*
 ![__results___9_1](https://github.com/user-attachments/assets/c3e712b1-2ed7-4302-bc08-6704aad2843b)
 
 Over the past 20 years, we see a gradual growth of 3s being attempted per game by players. From 1 out of every 5 shots attempted being a 3-pointer in the 1999-2000 season to almost 2 in every 5 shots in the present NBA being a 3.
@@ -38,7 +38,7 @@ To some, this might not be an astronomical jump in shooting rates but it's stagg
 
 <br>
 
-2.2 **Are Players Making These 3s?**
+### 2.2 *Are Players Making More 3s?*
 
 Focusing on Field Goal (FG) percentage did this three-point boom affect how well players were shooting the 3 ball?
 
@@ -50,7 +50,7 @@ Looking closely we can also observe an inflection point in the 2014-2015 season,
 
 <br>
 
-2.3 **3-Point Shot by Position**
+### 2.3 *3-Point Shot by Position*
 
 Now that we see this from a top-down point of view looking at all players, what kind of effect did the 3-point shot have on each of the five positions in the NBA, each having their unique strengths and weakness when it comes to shooting the basketball.
 
@@ -68,7 +68,7 @@ Looking at the rate at which player was making 3s it's not surprising to see PGs
 
 <br>
 
-2.4 **Is there any team success coming from these 3s?**
+### 2.4 *Is there any team success coming from these 3s?*
 
 Using Playoff appearances by a team as our metric of success (making the playoffs signifies you are one of the top 8 teams in your respective Conference), I've illustrated the number of attempts from the 3-point range for a team that made the playoffs in that specific season and those who did not.
 
@@ -80,7 +80,7 @@ From our graph, we see playoffs-making teams continually attempted more 3s than 
 <br>
 
 ## 3. Shot Mapping
-3.1 **Shot Frequency**
+### 3.1 *Shot Frequency*
 
 To get a better understanding of what was happening on the court we can examine shot location data which gives us the ability to map onto a plane all shots attempted during an entire season.
 
@@ -94,7 +94,7 @@ The death of the midrange (long 2-pointer) shot is clear to see here with the he
 
 <br>
 
-3.2 **Shot Distance Distribution**
+### 3.2 *Shot Distance Distribution*
 
 What interesting things can we discover if we visualize the percentage of shots taken from specific shot distances?
 
@@ -106,7 +106,7 @@ However, the mid-range shot (long 2-pointer) isn't necessarily dead as stars lik
 
 <br>
 
-3.3 **Jokić vs Shaq**
+### 3.3 *Jokić vs Shaq*
 
 The difference in shot selection for players is made even more evident by just looking at the shot selection of the most dominant Centers from their respective eras, Shaquille O'Neal and Nikola Jokić.
 
@@ -121,7 +121,7 @@ Let us take a more granular look at how shooting habits have changed over time b
 
 <br>
 
-4.1 **Data Preprocessing**
+### 4.1 *Data Preprocessing*
 
 ![image](https://github.com/user-attachments/assets/58ecccf7-d069-4b0a-883e-14dd39a10310)
 
@@ -129,7 +129,7 @@ Let us take a more granular look at how shooting habits have changed over time b
 
 <br>
 
-4.2 **Model Selection and Hyperparameter Tuning**
+### 4.2 *Model Selection and Hyperparameter Tuning*
 
 Let's start the process of building and comparing different classification models with default parameters and then applying more complex tools to make our models more accurate.
 
@@ -188,7 +188,7 @@ Gradient Boosted Trees is the model we'll use for both data sets as it boasts th
 
 <br>
 
-4.3 **Lebron 2004**
+### 4.3 *Lebron 2004*
 
 Starting with raw shot charts we see shots closer to the rim (specifically less than 8 ft) drown out any other shot distance LeBron is making in terms of volume.
 
@@ -206,7 +206,7 @@ Coaches during and after the 2003-04 season would evaluate LeBron's shot diet as
 
 <br>
 
-4.4 **Lebron 2023**
+### 4.4 *Lebron 2023*
 
 Now the same for the 2022-23 season
 
