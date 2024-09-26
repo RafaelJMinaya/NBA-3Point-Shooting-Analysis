@@ -68,7 +68,7 @@ Looking at the rate at which player was making 3s it's not surprising to see PGs
 
 <br>
 
-### 2.4 *Is there any team success coming from these 3s?*
+### 2.4 *Team Success From 3s?*
 
 Using Playoff appearances by a team as our metric of success (making the playoffs signifies you are one of the top 8 teams in your respective Conference), I've illustrated the number of attempts from the 3-point range for a team that made the playoffs in that specific season and those who did not.
 
