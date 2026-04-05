@@ -1,7 +1,7 @@
 # NBA 3-Point Shooting Analysis 🏀
 
 ## 0. Overview
-The NBA has experienced numerous transformative eras since the ABA-NBA merger, each bringing revolutionary changes to the game. One of the most significant eras is the current 3-Point Revolution, which began in the mid-2010s. Over the past decade, the prominence of the 3-point shot has dramatically reshaped the game, a stark contrast to earlier decades. This study analyzes NBA game and season data from 1999–2000 to 2022–2023 regular seasons to observe 3-point shooting trends and provide a comprehensive scoring analysis focused on contemporary player shooting behaviors.
+The National Basketball Association (NBA) has experienced numerous transformative eras since the ABA-NBA merger, each bringing revolutionary changes to the way the game is played. One of the most significant eras is the current 3-Point shooting revolution, which began in the mid-2010s. Over the past decade, the prominence of the 3-point shot has dramatically reshaped the league, representing a stark contrast to how the game looked in past decades. This project looks to analyze NBA game and season data from the 1999–2000 to the 2022–2023 regular seasons to break down 3-point shooting trends and provide a detailed look at individual players' shooting behaviors over the years.
 
 ![Joel-Embiid-DESKTOP-RAFAEL](https://github.com/user-attachments/assets/1605895d-5f13-4710-a535-eb5cffe2bdee)
 
@@ -52,7 +52,7 @@ Looking closely we can also observe an inflection point in the 2014-2015 season,
 
 ### 2.3 *3-Point Shot by Position*
 
-Now that we see this from a top-down point of view looking at all players, what kind of effect did the 3-point shot have on each of the five positions in the NBA, each having their unique strengths and weakness when it comes to shooting the basketball.
+Now that we see this from a top-down point of view looking at all players, what kind of effect did the 3-point shot have on each of the five positions in the NBA, each having their unique strengths and weaknesses when it comes to shooting the basketball.
 
 ![__results___15_1](https://github.com/user-attachments/assets/d2bf5a8c-3339-4604-94e7-d12dd4a0cdeb)
 
@@ -64,7 +64,7 @@ For folks who watch NBA basketball regularly this change can be seen on the cour
 
 ![__results___17_1](https://github.com/user-attachments/assets/1843d015-a2a8-40b6-b421-4c2dbb1dc94a)
 
-Looking at the rate at which player was making 3s it's not surprising to see PGs, SGs, and SFs shooting at such a high rate but what's more surprising is PFs and Cs catching up with their shorter and quicker counterparts in the 3-point-making department.
+Looking at the rate at which players were making 3s it's not surprising to see PGs, SGs, and SFs shooting at such a high rate but what's more surprising is PFs and Cs catching up with their shorter and quicker counterparts in the 3-point-making department.
 
 <br>
 
@@ -196,7 +196,7 @@ Starting with raw shot charts we see shots closer to the rim (specifically less 
 
 ![__results___42_2](https://github.com/user-attachments/assets/a197e63f-d0e2-47fa-856b-989cb9432b26)
 
-Now using our Gradient Boosted model let's look at a kdeplot for location mapping to get a better picture of how Lebron's shooting habits and hotpots.
+Now using our Gradient Boosted model let's look at a kdeplot for location mapping to get a better picture of Lebron's shooting habits and hotpots.
 
 ![__results___44_0](https://github.com/user-attachments/assets/97c762dc-a724-4953-a556-2b817bb5032d)
 
@@ -227,11 +227,11 @@ LeBron's evolution is very interesting to see as he still attacks the basket in 
 
 ## 5. Conclusion
 
-The NBA today finds itself in the middle of one of its most defining eras with the 3-point boom. With players like Stephen Curry being the poster child for this new era, the staggering effects of such a paradigm shift in the league but also in basketball as a whole have had indescribable impacts on how basketball at all levels is played, coached, and even examined. With the upward trend of NBA players attempting and making more 3-point shots from the beginning of the 21st century to the present being clear, the offensive capabilities of NBA teams (made evident with higher than-ever final point totals and player points per game) have reached levels never before seen. A change like this however doesn't come with the impact of just one player like Stephen Curry but with there being external factors or influences on and off the court which radically changed systems within the league.
+The NBA today finds itself in the middle of one of its most defining eras with the 3-point boom. With players like Stephen Curry being the poster child for this new era, the staggering effects of such a paradigm shift in the league but also in basketball as a whole have had indescribable impacts on how basketball at all levels is played, coached, and even examined. With the upward trend of NBA players attempting and making more 3-point shots from the beginning of the 21st century to the present being clear, the offensive capabilities of NBA teams (made evident with higher-than-ever single game point totals and player points per game) have reached levels never before seen. A change like this however doesn't come with the impact of just one player like Stephen Curry but with there being external factors or influences on and off the court which radically changed systems within the league.
 
-Starting around the 2013-14 and 2014-2015 seasons behind the scenes the NBA was also going through another revolution in the form of the analytics boom. Teams like the Houston Rockets with offensive-minded Head Coach Mike D'Antoni and star player James Harden were the faces of this new offensive-minded movement. If one individual and their team could be labeled as leading the way behind the scenes it was Houston Rockets General Manager Daryl Morey. With his analytics-focused basketball philosophy, labeled “Moreyball,” Morey pushed for his team to concentrate on more “statistical sound” shot attempts which focused less on mid-range shots and more on 3s and shots closer to the basket.
+Starting behind the scenes in the early 2000s and 2010s the NBA was also going through another revolution in the form of the analytics boom. It was only until a team like the Houston Rockets in the mid-2010s with offensive-minded Head Coach Mike D'Antoni and superstar player James Harden did this new offensive-minded movement really begin on the court. If one individual could be labeled as leading the way behind the scenes in the NBA it was Houston Rockets General Manager Daryl Morey. With his analytics-focused basketball philosophy, labeled “Moreyball,” Morey pushed for his team to concentrate on more “statistical sound” shot attempts which focused less on mid-range shots and more on 3s and shots closer to the basket.
 
-Morey's philosophy sent shockwaves through the NBA and other teams followed suit. Using data similar to how Morey did, in this study, we showcased how vital it is for coaches, trainers, and higher-up executives within teams to find and follow important trends. Such findings can then be acted upon to make well-informed decisions to prepare for the future of not just the NBA but of all of basketball.
+Morey's philosophy alongside other analytically inclined voices sent shockwaves through the NBA and other teams followed suit. Using data similar to how Morey and his team of analysts did, in this study, we showcased how vital it is for coaches, trainers, and higher-up executives within teams to find and follow important trends. Such findings can then be acted upon to make well-informed decisions to prepare for the future of not just the NBA but of all of basketball.
 
 <br>
 <br>
@@ -251,7 +251,7 @@ Thank you to Dominic Samangy for starting my interest in NBA data visualization 
 
 >https://github.com/DomSamangy
 
-Thank you to the Kaggle members and their datasets which made this project possible (links to all of them below)
+Thank you to the Kaggle members and their datasets which made this project possible (links to all of them below).
 
 >https://www.kaggle.com/datasets/sumitrodatta/nba-aba-baa-stats
 
@@ -259,9 +259,9 @@ Thank you to the Kaggle members and their datasets which made this project possi
 
 >https://www.kaggle.com/datasets/nathanlauga/nba-games
 
+The Ringer article for more information on Moreyball from the mid 2010s.
 
-
-
+>https://www.theringer.com/2016/12/08/nba/under-the-influence-of-moreyball-1ea4ba34b85c
 
 
 
